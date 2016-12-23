@@ -1,3 +1,138 @@
 body, html {
     margin: 0px;
+    background: #0099CC;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+    background: rgba(100, 100, 210, 0.4);
+    display: flex;
+    display: -webkit-flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+header a {
+    color: #DDDDDD;
+    line-height: 35px;
+    display: flex;
+    max-width: 70px;
+    align-items: flex-start;
+}
+
+nav {
+    background: #eee;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+  transition: all 1s;
+}
+
+nav li a {
+  padding: 0.2rem 0.5rem;
+  font-size: 1.6rem;
+  max-width: 140px;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  color: #333;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:500px) {
+  nav li {
+    width: 100%;
+  }
+}
+
+nav li a:hover, nav li a:focus {
+  background: #ccc;
+  color: black;
+}
+
+
+nav a:hover, nav a:focus {
+  background: #ccc;
+  color: black;
+}
+nav a:hover span, nav a:focus span {
+  color: green;
+}
+
+nav span {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #888;
+  margin: 0.25rem 0 0 0;
+}
+nav .icon {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 1rem;
+  fill: #999;
+}
+
+.author_wrapper {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20%;
+    transition: all 1s;
+    color: #FFFFFF;
+    text-align: center;
+   margin-bottom: 50px;
+}
+
+.author_image{
+    border-radius: 50%;
+    background-image: url('v.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 20%;
+    transition: all 1s;
+}
+
+.author_skill {
+  padding:10px;
+}
+
+footer {
+    background: rgba(20, 20, 20, 0.4);
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    position: fixed;
+}
+
+footer a {
+    color: #EEE;
+    font-size: 30px !important;
+    line-height: 50px !important;
+    text-align: center;
+    margin-left: 1em;
+    text-decoration: none;
+}
+
+footer div {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
 }

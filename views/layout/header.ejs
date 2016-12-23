@@ -1,1 +1,31 @@
-<div style="background:#0099CC; color:#FFFFFF; padding:20px;">Header</div>
+<nav>
+    <ul>
+        <li>
+            <a href='/' data-ng-click="toggle = !toggle" data-ng-class="{'active' : toggle}">
+                <span class="fa fa-user-o icon">
+                </span>
+                <div>
+                    About
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href='/skill' data-ng-click="toggle = !toggle" data-ng-class="{'active' : toggle}">
+                <span class="fa fa-fire icon">
+                </span>
+                <div>
+                    Skills
+                </div>
+            </a>
+        </li>
+        <li>
+             <a data-ng-click="toggle = !toggle" data-ng-class="{'active' : toggle}">
+                <span class="fa fa-pencil icon">
+                </span>
+                <div>
+                    Blog
+                </div>
+            </a>
+        </li>
+    </ul>
+</nav>
